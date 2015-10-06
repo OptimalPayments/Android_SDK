@@ -1,0 +1,25 @@
+apply plugin: 'android'
+
+dependencies {
+    compile fileTree(dir: 'libs', include: '*.jar')
+}
+
+android {
+    compileSdkVersion 15
+    buildToolsVersion "19.0.3"
+
+    sourceSets {
+        main {
+            manifest.srcFile 'AndroidManifest.xml'
+            java.srcDirs = ['JAVA_COMMON_SRC']
+            resources.srcDirs = ['JAVA_COMMON_SRC']
+            aidl.srcDirs = ['JAVA_COMMON_SRC']
+            renderscript.srcDirs = ['JAVA_COMMON_SRC']
+            res.srcDirs = ['res']
+            assets.srcDirs = ['assets']
+        }
+
+        // Move the tests to tests/java, tests/res, etc...
+        instrumentTest.setRoot('tests')
+    }
+}

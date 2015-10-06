@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- For Button -->
+    <color name="btn_pressed">#ffcc00</color>
+    <color name="btn_focused">#ffcc00</color>
+    <color name="btn_default">#ffff8800</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="menu_list_bgcolor_pressed">#d7d7d7</color>
+    <color name="menu_text_bgcolor">#000000</color>
+    <color name="actionbar_title_bg">#0072bc</color>
+    <color name="bgcolor_layout">#e2f4fb</color>
+    <color name="button_gray_bgcolor">#959595</color>
+    <color name="button_blue_bgcolor">#0072bc</color>
+    <color name="sale_sub_title_color">#3da2e4</color>
+    <color name="edittext_focused_border">#555555</color>
+    <color name="device_address_colcor">#555555</color>
+    <color name="sale_divider">#c2c2c2</color>
+    <color name="keypad_color">#45a1dc</color>
+    <color name="trsn_hist_amount_color">#0099cc</color>
+    <color name="list_divider">#cccccc</color>
+    <color name="txn_history_merchant_textcolor">#0072b8</color>
+    <color name="gray_textcolor">#555</color>
+    <color name="titlebackgroundcolor">#3232CD</color>
+    <color name="titletextcolor">#FFFF00</color>
+
+</resources>

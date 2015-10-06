@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="30dip"
+            android:layout_margin="10dp"
+            android:background="@android:color/transparent"
+            android:text="@string/back"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dip" >
+
+        <TextView
+            style="@style/cardExp"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:lines="1"
+            android:text="@string/profile_id" />
+
+        <EditText
+            android:id="@+id/et_profile_id"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            android:background="@drawable/configure_edittext_selector"
+            android:gravity="center"
+            android:longClickable="false"
+            android:text="34361085-c873-4b2f-a61e-18cfdc5bd02c"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dip" >
+
+        <Button
+            android:id="@+id/btn_search"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:background="@color/button_blue_bgcolor"
+            android:height="20dp"
+            android:text="@string/search"
+            android:textColor="@color/white"
+            android:visibility="visible"
+            android:width="80dp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dip"
+        android:background="@android:color/black" />
+
+    <ListView
+        android:id="@+id/lookup_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:layout_weight="1"
+        android:divider="@color/list_divider"
+        android:dividerHeight="1dp"
+        android:scrollbars="none"
+        android:transcriptMode="alwaysScroll" >
+    </ListView>
+
+    <LinearLayout
+        android:id="@+id/bottomlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dip"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:padding="5dp" >
+
+        <Button
+            android:id="@+id/btn_Checkout"
+            style="@style/BlueButton"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="@dimen/button_height"
+            android:text="@string/checkout"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btn_Update"
+            style="@style/BlueButton"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="@dimen/button_height"
+            android:layout_marginLeft="20dp"
+            android:text="@string/update_card"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>
